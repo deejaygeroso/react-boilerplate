@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement } from 'react';
 
-interface ISample {
-  name: string
+interface SampleInterface {
+  name: string;
 }
 
-const Sample = ({ name }: ISample): ReactElement => <div>{name}</div>
+const Sample = ({ name }: SampleInterface): ReactElement => <div>{name}</div>;
 
-export default Sample
+export default Sample;
