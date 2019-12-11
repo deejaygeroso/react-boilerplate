@@ -1,13 +1,13 @@
-import React, { ReactElement } from 'react';
-import { Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom';
+import React, { ReactElement } from 'react'
+import { Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom'
 
 function Topic(): ReactElement {
-  const { topicId } = useParams();
-  return <h3>Requested topic ID: {topicId}</h3>;
+  const { topicId } = useParams()
+  return <h3>Requested topic ID: {topicId}</h3>
 }
 
 const Topics = (): ReactElement => {
-  const match = useRouteMatch();
+  const match = useRouteMatch()
 
   return (
     <div>
@@ -35,7 +35,7 @@ const Topics = (): ReactElement => {
         </Route>
       </Switch>
     </div>
-  );
-};
+  )
+}
 
-export default Topics;
+export default Topics

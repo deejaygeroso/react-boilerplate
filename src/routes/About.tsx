@@ -1,7 +1,7 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
 const About = (): ReactElement => {
-  return <h2>About</h2>;
-};
+  return <h2>About</h2>
+}
 
-export default About;
+export default About

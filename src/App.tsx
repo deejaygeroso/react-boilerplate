@@ -1,31 +1,22 @@
-import React, { ReactElement } from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import React, { ReactElement } from 'react'
+import { Switch, Route } from 'react-router-dom'
 
-import About from './routes/About';
-import Home from './routes/Home';
-import Topics from './routes/Topics';
+import About from './routes/About'
+import Home from './routes/Home'
+import Topics from './routes/Topics'
+import Navigation from './routes/Navigation'
 
 const App = (): ReactElement => {
   return (
     <div>
-      <ul>
-        <li>
-          <Link to='/'>Home</Link>
-        </li>
-        <li>
-          <Link to='/about'>About</Link>
-        </li>
-        <li>
-          <Link to='/topics'>Topics</Link>
-        </li>
-      </ul>
+      <Navigation />
       <Switch>
         <Route path='/about' component={About} />
         <Route path='/topics' component={Topics} />
         <Route path='/' component={Home} />
       </Switch>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
