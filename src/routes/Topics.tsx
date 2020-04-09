@@ -1,5 +1,5 @@
+import { Link, Route, Switch, useParams, useRouteMatch } from 'react-router-dom'
 import React, { ReactElement } from 'react'
-import { Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom'
 
 function Topic(): ReactElement {
   const { topicId } = useParams()

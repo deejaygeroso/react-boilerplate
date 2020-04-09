@@ -1,10 +1,10 @@
 import React, { ReactElement } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 import About from './routes/About'
 import Home from './routes/Home'
-import Topics from './routes/Topics'
 import Navigation from './routes/Navigation'
+import Topics from './routes/Topics'
 
 const App = (): ReactElement => {
   return (
