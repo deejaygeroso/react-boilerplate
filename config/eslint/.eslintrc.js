@@ -18,8 +18,22 @@ module.exports = {
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/interface-name-prefix': [
+      'warn',
+      {
+        prefixWithI: 'always',
+        allowUnderscorePrefix: false,
+      },
+    ],
     'prettier/prettier': 'error',
-    semi: ['error', 'never'],
+    'semi': ['error', 'never'],
+    'sort-imports': ['error', {
+        'ignoreCase': false,
+        'ignoreDeclarationSort': false,
+        'ignoreMemberSort': false,
+        'memberSyntaxSortOrder': ['multiple', 'single', 'all', 'none']
+    }],
+    'sort-keys': ['error', 'asc', {caseSensitive: false}]
   },
   settings: {
     react: {
