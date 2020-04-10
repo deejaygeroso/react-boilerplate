@@ -1,3 +1,5 @@
+# Dockerized React Hooks Application Boilerplate in Typescript
+
 A **React Boilerplate** that implements **hooks** and is written in **Typescript**.
 Application is configured with **docker** and is setup ready for production use.
 
