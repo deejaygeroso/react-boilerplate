@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from '@reach/router'
 
 const Navigation = (): ReactElement => {
   return (
@@ -10,9 +10,6 @@ const Navigation = (): ReactElement => {
         </li>
         <li>
           <Link to='/about'>About</Link>
-        </li>
-        <li>
-          <Link to='/topics'>Topics</Link>
         </li>
       </ul>
     </nav>
