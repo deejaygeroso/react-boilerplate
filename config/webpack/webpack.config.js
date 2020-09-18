@@ -79,7 +79,14 @@ module.exports = () => {
     },
 
     plugins: [
-      new CopyPlugin([{ from: 'public/robots.txt', to: 'robots.txt' }]),
+      new CopyPlugin(
+        {
+          patterns: [{
+            from: 'public/robots.txt',
+            to: 'robots.txt',
+          }],
+        },
+      ),
       new HtmlWebPackPlugin({
         favicon: './public/assets/images/favicon.ico',
         filename: './index.html',
