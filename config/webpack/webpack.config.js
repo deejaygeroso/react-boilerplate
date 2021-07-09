@@ -20,8 +20,6 @@ module.exports = () => {
 
   return {
     devServer: {
-      contentBase: './dist',
-      disableHostCheck: true,
       historyApiFallback: true,
       hot: true,
       port: env.PORT,
@@ -73,20 +71,20 @@ module.exports = () => {
     },
 
     output: {
-      filename: './main.js',
+      filename: '[name].[hash].js',
       path: path.resolve(__dirname, '../../dist'),
       publicPath: '/',
     },
 
     plugins: [
-      new CopyPlugin(
-        {
-          patterns: [{
+      new CopyPlugin({
+        patterns: [
+          {
             from: 'public/robots.txt',
             to: 'robots.txt',
-          }],
-        },
-      ),
+          },
+        ],
+      }),
       new HtmlWebPackPlugin({
         favicon: './public/assets/images/favicon.ico',
         filename: './index.html',
@@ -100,6 +98,13 @@ module.exports = () => {
 
     resolve: {
       extensions: ['.ts', '.tsx', '.js', 'jsx'],
+    },
+
+    // IMPORTANT: Adding watchOptions after updating from webpack version 4 to 5 allows
+    // HMR & LiveReload to work. We have also updated webpack-dev-server from v3.11.2 to v4.0.0-beta.1.
+    watchOptions: {
+      ignored: /node_modules/,
+      poll: true,
     },
   }
 }
