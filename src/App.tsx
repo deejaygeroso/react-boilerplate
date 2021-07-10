@@ -1,14 +1,20 @@
 import React, { ReactElement } from 'react'
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import About from './modules/About'
 import Home from './modules/Home'
-import { Router } from '@reach/router'
 import './common/styles/app.css'
 
 const App = (): ReactElement => {
   return (
     <Router>
-      <About path='/about' component={About} />
-      <Home path='/' component={Home} />
+      <Switch>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Switch>
     </Router>
   )
 }
