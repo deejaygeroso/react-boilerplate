@@ -5,7 +5,7 @@ Application is configured with **docker** and is setup ready for production use.
 
 ### Setup includes:
 
-- React Router
+- React Router Dom
 - Webpack
 - Typescript
 - Eslint
