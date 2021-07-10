@@ -1,8 +1,7 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 import { Navigation } from '../common/components'
-import { RouteComponentProps } from '@reach/router'
 
-const Home: FunctionComponent<RouteComponentProps> = (): ReactElement => {
+const Home: FunctionComponent = (): ReactElement => {
   return (
     <div>
       <Navigation />
