@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import About from './modules/About'
 import Home from './modules/Home'
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import './common/styles/app.css'
 
 const App = (): ReactElement => {
