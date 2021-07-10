@@ -7,6 +7,7 @@
   - replaced "reach/router v1.3.4" with "react-router-dom v5.2.0"
   - added webpack-dev-server v4.0.0-beta.1 (this is allows hmr & live reload to work with webpack 5)
   - loaders & plugins that is compatible with webpack version 5
+  - Updated eslint configuration
 
 ### v0.0.1 - September 18, 2020
 
