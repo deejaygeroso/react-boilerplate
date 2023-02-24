@@ -1,6 +1,6 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 
-import { Navigation } from '../common/components'
+import { Navigation } from '@/components'
 
 const Home: FunctionComponent = (): ReactElement => {
   return (

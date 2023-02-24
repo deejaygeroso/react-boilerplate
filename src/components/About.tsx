@@ -1,5 +1,6 @@
 import React, { FunctionComponent, ReactElement } from 'react'
-import { Navigation } from '../common/components'
+
+import { Navigation } from '@/components'
 
 const About: FunctionComponent = (): ReactElement => {
   return (

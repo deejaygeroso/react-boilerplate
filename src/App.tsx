@@ -1,8 +1,10 @@
 import React, { ReactElement } from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import About from './modules/About'
-import Home from './modules/Home'
-import './common/styles/app.css'
+
+import About from '@/components/About'
+import Home from '@/components/Home'
+
+import '@/styles/app.css'
 
 const App = (): ReactElement => {
   const router = createBrowserRouter([
