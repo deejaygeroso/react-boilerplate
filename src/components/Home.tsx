@@ -1,6 +1,6 @@
-import React, { FunctionComponent, ReactElement } from 'react'
+import React, { FunctionComponent, ReactElement } from "react";
 
-import { Navigation } from '@/components'
+import { Navigation } from "@/components";
 
 const Home: FunctionComponent = (): ReactElement => {
   return (
@@ -8,7 +8,7 @@ const Home: FunctionComponent = (): ReactElement => {
       <Navigation />
       <h2>HomePage</h2>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

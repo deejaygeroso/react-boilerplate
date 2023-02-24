@@ -1,6 +1,6 @@
-import React, { FunctionComponent, ReactElement } from 'react'
+import React, { FunctionComponent, ReactElement } from "react";
 
-import { Navigation } from '@/components'
+import { Navigation } from "@/components";
 
 const About: FunctionComponent = (): ReactElement => {
   return (
@@ -8,7 +8,7 @@ const About: FunctionComponent = (): ReactElement => {
       <Navigation />
       <h2>About</h2>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
