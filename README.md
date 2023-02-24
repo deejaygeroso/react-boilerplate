@@ -1,51 +1,23 @@
-# Dockerized React Hooks Application Boilerplate in Typescript
+# React + Vite + Typescript
 
-A **React Boilerplate** that implements **hooks** and is written in **Typescript**.
-Application is configured with **docker** and is setup ready for production use.
+### Tech:
 
-### Setup includes:
-
-- React v17
+- React v18
 - React Router Dom v5
-- Webpack v5
 - Typescript v4
+- Vite v4
 - Eslint
 - Prettier
-- Docker
+- pNPM
 
-### Required Setup
+### Requied Visual Studio Code Plugins
 
-Create file `.env` file then add variable:
+<img width="529" alt="Screenshot 2023-02-24 at 10 01 04 AM" src="https://user-images.githubusercontent.com/4627358/221075088-9c9987e5-4b91-410d-bc98-6cafe878c328.png">
+<img width="476" alt="Screenshot 2023-02-24 at 10 01 17 AM" src="https://user-images.githubusercontent.com/4627358/221075100-a780499e-82f0-4d8d-8c72-a7adde1aa988.png">
+<img width="586" alt="Screenshot 2023-02-24 at 10 01 29 AM" src="https://user-images.githubusercontent.com/4627358/221075157-106e29fc-5e39-4fcd-94ea-751fb551e9c6.png">
 
-```
-# Use ENV=prod for production
-ENV=dev
-PORT=8000
-```
+### Setup
 
-### Running docker in daemon
-
-Note: `docker` && `docker-compose` should be installed on your machine.
-Also, set `ENV=prod` from `.env` file.
-
-```
-docker-compose up --build -d
-```
-
-### Build nginx dockerfile manually
-
-```
-docker build -t client-nginx . --file config/nginx/Dockerfile
-```
-
-### Running application in development
-
-```
-npm run dev
-```
-
-### Running application for production using npm
-
-```
-npm run build && npm run start
-```
+1. git clone `https://github.com/deejaygeroso/react-boilerplate.git`
+2. pnpm i
+3. pnpm dev

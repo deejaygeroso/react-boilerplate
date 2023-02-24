@@ -1,22 +1,24 @@
 import React, { ReactElement } from 'react'
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
-import About from './modules/About'
-import Home from './modules/Home'
-import './common/styles/app.css'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+
+import About from '@/components/About'
+import Home from '@/components/Home'
+
+import '@/styles/app.css'
 
 const App = (): ReactElement => {
-  return (
-    <Router>
-      <Switch>
-        <Route path='/about'>
-          <About />
-        </Route>
-        <Route path='/'>
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
-  )
+  const router = createBrowserRouter([
+    {
+      element: <Home />,
+      path: '/',
+    },
+    {
+      element: <About />,
+      path: 'about',
+    },
+  ])
+
+  return <RouterProvider router={router} />
 }
 
 export default App
