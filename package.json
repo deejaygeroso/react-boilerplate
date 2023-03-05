@@ -7,11 +7,13 @@
     "build": "vite build src --config ./config/vite/vite.config.js",
     "dev": "vite src --config ./config/vite/vite.config.js",
     "preview": "vite preview dist --config ./config/vite/vite.config.js",
-    "lint": "eslint -c ./config/eslint/.eslintrc 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*'",
     "start": "serve -l 3000 -s dist",
     "test": "vitest --config ./config/vite/test.config.js",
     "test:coverage": "vitest --config ./config/vite/test.config.js --coverage",
-    "prettier:write": "prettier --config ./config/prettier/.prettierrc --write ./src"
+    "lint": "eslint -c ./config/eslint/.eslintrc.cjs 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*'",
+    "lint:fix": "eslint -c ./config/eslint/.eslintrc.cjs 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*' --fix",
+    "prettier": "prettier --config ./config/prettier/.prettierrc --check './src/**/*.{ts,tsx}'",
+    "prettier:fix": "prettier --config ./config/prettier/.prettierrc --write './src/**/*.{ts,tsx}'"
   },
   "repository": {
     "type": "git",
@@ -24,8 +26,8 @@
   },
   "homepage": "https://github.com/deejaygeroso/react-hooks-boilerplate#readme",
   "devDependencies": {
-    "@react-helper/eslint-config": "^1.0.0",
-    "@react-helper/prettier-config": "^1.0.0",
+    "@react-helper/eslint-config": "^1.2.0",
+    "@react-helper/prettier-config": "^1.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.0.28",
